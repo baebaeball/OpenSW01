@@ -159,9 +159,25 @@
 |F|프로세스와 스레드 관련 항목|
 |SIZE|가상 이미지 크기|
 |RSS|프로세스 실제 메모리 크기(KB단위)|
+|PID|프로세스 ID|
+|PRI|프로세스 스케줄링 우선순위|
+|S|프로세스와 커널 스레드 상태|
+|LIM|메모리에 대한 소프트 한계 항목|
+|NI|프로세스 우선순위 값|
+|TIME|프로세스 소비 총 시간|
+|UID|사용자 ID|
+|WCHAN|프로세스에 거주하는 커널 함수|
+|%CPU|마지막 1분동안 프로세스가 사용한 CPU 점유율|
+|%MEM|마지막 1분동안 프로세스가 사용한 메모리 점유율|
 
 
 *ps 사용 예시*
 
 
-![image](C:/Users/문화선/OneDrive/바탕 화면/ps example01.png)
+
+![ps example01](https://user-images.githubusercontent.com/96333096/171322322-809abc61-15da-4f0c-b31f-72bc1dc1f1e2.png)
+
+
+![ps example02](https://user-images.githubusercontent.com/96333096/171322284-3e909d8d-2c42-4f86-872b-fb9b7f36f509.png)
+
+
