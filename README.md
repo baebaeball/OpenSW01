@@ -66,3 +66,102 @@
 
 **2) 유닉스 리눅스 명령어(ps)**
 - 프로세스의 현재 상태 출력
+
+
+***ps [옵션]***
+
+
+(1) 전체 프로세스와 관련된 옵션
+
+
+- -A : 모든 프로세스 출력
+- -N : -A 옵션에서 ps 프로세스를 제외하고 출력
+- -a : 세션 리더와 터미널에 속하지 않는 프로세스를 제외하고 출력
+- -d : 세션 리더를 제외한 프로세스 출력
+- -e : 커널 프로세스를 제외한 프로세스 출력
+- T : 현재 터미널의 모든 프로세스 출력
+- a : 현재 터미널의 사용자 고유 프로세스 출력
+- r : 현재 실행 중인 프로세스 출력
+- x : 터미널이 없는 프로세스 출력
+
+
+(2) 특정 프로세스를 선택하여 보여주는 옵션
+
+
+- -C : 지정한 명령어 이름과 관련된 정보 출력
+- -G : 그룹 ID에 관한 정보 출력
+- -U : 사용자 ID에 관한 정보 출력
+- -g : 지정한 세션 리더나 그룹명에 관한 정보 출력
+- -p : 프로세스 ID 출력
+- -s : 세션에 속한 프로세스 지정
+- -t : tty 지정
+- t : tty 지정
+- -u : 사용자 ID 지정
+- U : 지정한 사용자 프로세스 출력
+- p : 프로세스 ID 지정
+- --Group : 실제 그룹이름 또는 ID 지정
+- --group : 유효 사용자 이름 또는 ID 지정
+- --User : 실제 사용자 이름 또는 ID 지정
+- --user : 유효 사용자 이름 또는 ID 지정
+- --pid : 프로세스 ID 지정
+- --sid : 세션 ID 지정
+- --tty : 터미널 지정
+- -123 = --sid 123
+- 123 = --pid 123
+
+
+(3) 출력 결과 필드를 제어하는 옵션
+
+
+- -0 : PID, TTY, STAT, TIME, COMMAND 등 필드 목록 출력
+- -c : PID, CLS, PRI, TTY, TIME. CMD 등 필드 목록 출력
+- -f : UID, PID, PPID, C, STIME, TTY, TIME, CMD 등 필드를 CMD 필드의 전체 명령어 형태로 출력
+- -j : PID, PGID, SID, TTY, TIME, CMD 등 필드 목록 출력
+- -l : F, S, UID, PID, PPID, C, PRI, NI, ADDR, SZ, WCHAN, TTY, TIME, CMD 필드의 상세 정보 출력
+- -o : 사용자가 정의한 포맷 지정
+- -y : -l 또는 l 옵션과 함께 ADDR 필드를 RSS 필드로 출력
+- 0 : PID, TTY, STAT, IME COMMAND 필드 정보 출력
+- X : PID, STACKP, ESP, EIP, TMOUT, ALARM, STAT, TTY, TIME, COMMAND 필드의 정보를 리눅스 i386 레지스터 형식으로 출력한다.
+- j : PPID, PID, PGID, SID, TTY, TPGID, STAT, UID, TIME, COMMAND 필드의 정보를 작업 제어에 관련된 형식으로 출력한다.
+- l : F, S, UID, PID, PPID, C, PRI, NI, ADDR, SZ, PSS, WCHAN, TTY, TIME, CMD 필드의 정보를 출력하고 -l 옵션과 함께 PSS 필드를 추가하여 출력한다.
+- o : 사용자 지정 형식으로 출력한다.
+- s : UID, PID, PENDING, BLOCKED, IGNORED, CAUGHT, STAT, TTY, TIME, COMMAND 필드의 정보를 출력한다.
+- u : USER, PID, %CPU, %MEM, VSZ, RSS, TTY, STAT, START, TIME, COMMAND 필드의 정보를 출력한다.
+- v : PID, TTY, STAT, TIME, MAJFL, TRS, DRS, RSS, %MEM, COMMAND 필드의 정보를 출력한다.
+- --format : 사용자 지정 형식으로 출력한다.
+
+
+(4) 출력 필드의 내용을 변경하는 옵션
+
+
+- -H : 프로세스를 계층형으로 출력
+- -m : 스레드 정보 출력
+- -n namelist : 시스템 이름 리스트 파일 지정
+- -w : 너비에 맞게 잘려진 내용을 제한이 없는 너비의 내용으로 출력
+- --cols : 스크린 너비 설정
+- --columns : 스크린 너비 설정
+- --cumulative : 죽은 자식 프로세스 데이터 포함하여 출력
+- --forest : 아스키 문자의 프로세스 트리 형태로 출력
+- --html : HTML 이스케이프 출력
+- --headers : 헤더 라인 반복
+- --no-headers : 헤더 안보이게 설정
+- --lines : 스크린 높이 설정
+- --rows : 스크린 높이 설정
+- --sort : 정렬 방식 지정
+
+
+|필드명|설명|
+|------|---|
+|ADDR|프로세스 스택 세그먼트 번호|
+|BND|커널 스레드가 바인드되는 논리 프로세스 번호|
+|C|프로세스 사용량|
+|CMD|사용자가 실행한 명령 이름|
+|F|프로세스와 스레드 관련 항목|
+|SIZE|가상 이미지 크기|
+|RSS|프로세스 실제 메모리 크기(KB단위)|
+
+
+*ps 사용 예시*
+
+
+![image](C:/Users/문화선/OneDrive/바탕 화면/ps example01.png)
