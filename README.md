@@ -181,3 +181,28 @@
 ![ps example02](https://user-images.githubusercontent.com/96333096/171322284-3e909d8d-2c42-4f86-872b-fb9b7f36f509.png)
 
 
+**3) 유닉스 리눅스 명령어(jobs)**
+- 백그라운드로 진행 중인 작업 상태, 작업이 중지된 상태, 변경되었으나 보고되지 않은 상태 등을 표시
+- 현재 세션의 작업 상태 확인 및 출력
+
+
+|상태|설명|
+|------|---|
+|Running|작업이 일시 중단&종료되지 않고 계속 진행 중|
+|Done|작업이 완료되어 0 반환&종료|
+|Done (code)|작업이 정상적으로 완료&0이 아닌 코드 반환|
+|Stopped|작업 일시 중단|
+|Stopped(SIGTSTP)|SIGTSTP 신호가 작업을 일시 중단|
+|Stopped(SIGSTOP)|SIGSTOP 신호가 일시 중단|
+|Stopped(SIGSTTIN)|SIGTTIN 신호가 작업을 일시 중단|
+|Stopped(SIGTTOU)|SIGTTOU 신호가 작업을 일시 중단|
+
+
+*jobs 사용 예시*
+
+
+![jobsexample](https://user-images.githubusercontent.com/96333096/171323683-3a9c4f54-26fe-4cb2-b0a6-ec11b4c17bb0.png)
+
+
+![jobsexample01](https://user-images.githubusercontent.com/96333096/171323705-2a62d177-ca42-4ab6-b0be-3d50f81ee89c.png)
+
